@@ -88,6 +88,7 @@ function initTable(el) {
                         column.formatter = "html";
                         if (items.filters) {
                             column.headerFilter = "input";
+                            column.headerFilterFunc = "regex";
                         }
                     });
                     table.setColumns(columns);
